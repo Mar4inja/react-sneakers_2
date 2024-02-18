@@ -82,10 +82,13 @@ h5 {
   width: 32px;
   cursor: pointer;
 
-  .plus {
+
+  .plus:hover {
     opacity: 40%;
+
   }
 }
+
 
 .search-block {
   border: 1px solid #f3f3f3;
@@ -107,9 +110,12 @@ h5 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+
 }
 
 .drawer {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: 420px;
   height: 100%;
@@ -117,12 +123,18 @@ h5 {
   background: #ffffff;
   box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
   padding: 30px;
+  flex: 1;
   overflow: auto;
   margin-bottom: 40px;
 
   h2 {
     margin: 0;
   }
+}
+
+.d-flex {
+  overflow: auto;
+
 }
 
 .cartTotalBlock {
